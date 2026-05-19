@@ -1,0 +1,260 @@
+/*шрифты*/
+@font-face {
+    font-family: "Open Sans";
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*общее*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+/*менюшка*/
+
+
+header{
+    background-color: #eee;
+    width: 100%;
+}
+
+.container{
+    width: 1200px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.menu-up{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.menu {
+    align-self: flex-end;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+/*про пункты меню*/
+.menu-item {
+    margin-left: 25px;
+}
+
+/*про ссылки пунктов меню*/
+.menu-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+/*для раздела с подборкой*/
+
+.figures {
+    padding-bottom: 60px;
+    /*для того, чтобы след раздел был с отступом*/
+    flex-direction: column;
+}
+
+
+.figures-items{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.figures-item {
+    background-color: #eee;
+    margin: 0 15px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/*для всех четных элементов*/
+.figures-item:nth-child(even) {
+    background-color: #ccc;
+}
+
+/*для картинок в статьях*/
+.figures-item img {
+    border-radius: 15px 15px 0 0;
+}
+
+/*для ссылок в статьях*/
+.figures-item a {
+    text-decoration: none;
+    color: #000;
+}
+/*для ссылок в статьях при наведении*/
+.figures-item a:hover {
+    text-decoration: underline;
+}
+
+/*про работу в IT*/
+
+.fsize-article {
+    background-color: #eee;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.fsize-article_block {
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.fsize-article_content {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*вакансии*/
+
+.job-previews_block {
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.job-previews_block .job-previews_content {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.job-previews_block img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.job-previews_block h3 {
+    margin: 0 0 20px;
+}
+
+.job-previews_block p {
+    margin: 0;
+}
+
+.job-previews_block a {
+    display: block;
+    white-space: nowrap;
+    padding: 10px 15px;
+    background-color: #7de9c5;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*посты*/
+
+.posts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #eee;
+}
+
+.post-cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+/*конкретная карточка с постом*/
+.post-card {
+    width: 30%;
+    background-color: #fff;
+    margin-bottom: 35px;
+    border-radius: 15px;
+}
+
+.post-card img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.post-card-content {
+    padding: 15px;
+}
+
+.post-card-content h4 {
+    margin-top: 0;
+}
+
+.post-card-content a{
+    color: #000;
+    transition: opacity 0.25s;
+}
+
+.post-card-content a:hover {
+    opacity: 0.6;
+}
+
+.post-card-content time {
+    opacity: 0.7;
+}
+
+footer {
+    background-color: rgb(38 38 38);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #fff;
+    width: 100%;
+}
+
+.footer-men a {
+    color: #fff;
+}
+
+.footer-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-menu{
+    list-style: none;
+}
+
+.footer-menu-item {
+    margin-bottom: 15px;
+}
+
+.footer-menu-item a{
+    color: #fff;
+}
+
+.footer-socials {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-socials-item {
+    margin-left: 10px;
+}
+
+.footer-socials-item img {
+    width: 40px;
+    height: 40px;
+}
